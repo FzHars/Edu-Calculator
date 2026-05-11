@@ -20,7 +20,7 @@ export default function Footer() {
             <GraduationCap size={25} className="text-slate-900" />
           </div>
           <p className="text-xs text-slate-400 font-black tracking-[0.3em] uppercase">
-            Edu-Calc
+            EduCost Predictor
           </p>
           <p className="text-xs text-slate-400">
             ©2026 Built with <span className="grayscale">❤️</span> & Developed by{" "}
