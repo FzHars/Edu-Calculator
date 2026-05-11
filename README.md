@@ -27,6 +27,28 @@ $$FV = PV \times (1 + i)^n$$
 
 ---
 
+## 🔍 How the Calculation Works
+
+To ensure accuracy, the application calculates costs sequentially based on the student's journey:
+
+1. **Base Calculation**: 
+   It sums up all primary costs (Tuition, Entrance Fee, etc.) and optional extra costs (Books, Courses) for each education level.
+
+2. **Time-to-Entry (n)**: 
+   The system assumes a standard progression to determine when the user will pay for each level:
+   - **SD**: Starts in year 0 (or current age).
+   - **SMP**: Starts 6 years after SD.
+   - **SMA**: Starts 3 years after SMP.
+   - **S1**: Starts 3 years after SMA.
+
+3. **Inflation Compounding**: 
+   If inflation is enabled, the formula $FV = PV \times (1 + i)^n$ is applied to each level's total. This means university costs (12+ years away) will be hit much harder by inflation than elementary costs, reflecting real-world economic conditions.
+
+4. **Grand Total**: 
+   The "Sticky Bar" sums all future values to give parents the final "Target Amount" they need to save.
+   
+---
+
 ## 🛠️ Tech Stack
 
 *   **Framework**: [React.js](https://reactjs.org/)
