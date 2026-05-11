@@ -35,9 +35,4 @@ $$FV = PV \times (1 + i)^n$$
 *   **Deployment**: [Vercel](https://vercel.com/)
 
 ---
-
-## 📦 Installation & Setup
-
-1. **Clone the repository**
-   ```bash
-   git clone [https://github.com/](https://github.com/)[YourUsername]/education-cost-caster.git
+ 
